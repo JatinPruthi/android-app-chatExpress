@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="projects.jatin.chatexpress.ChatDialogsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/chat_dialog_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:layout_below="@id/chat_dialog_toolbar"
+        android:id="@+id/lstChatDialogs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/chatdialog_adduser"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        app:backgroundTintMode="@color/colorPrimaryDark"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="bottom|right|end"
+        />
+
+</RelativeLayout>

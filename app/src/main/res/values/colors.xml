@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <array name="dot_colors">
+        <item>#03A9F4</item>
+        <item>#E65100</item>
+        <item>#FFBB00</item>
+
+    </array>
+
+    <color name="white">#FFFFFF</color>
+    <color name="base">#AAAAAA</color>
+    <color name="blue">#4b8bf5</color>
+    <color name="blue_dark">#09225A</color>
+    <color name="black">#000</color>
+    <color name="gray">#aeadab</color>
+    <color name="red_price">#DB757C</color>
+    <color name="blue_sp">#A1AAC9</color>
+    <color name="gray_light">#f4f4f4</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="primary">#F75757</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="red">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="accent">#FFFFFF</color>
+    <color name="brown">#8A3324</color>
+
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="oragne">#FB6D04</color>
+    <color name="oragnelight">#f9a668</color>
+    <color name="ka">#a689ec</color>
+    <color name="green">#41f500</color>
+
+</resources>
