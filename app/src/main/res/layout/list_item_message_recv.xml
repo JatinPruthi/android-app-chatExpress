@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/simsimi_image"
+        android:src="@drawable/ic_simsimi"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp" />
+    <com.github.library.bubbleview.BubbleTextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/text_message"
+        android:padding="@dimen/_10sdp"
+        android:textColor="#FFF"
+        android:layout_toRightOf="@id/simsimi_image"
+        app:arrowWidth="@dimen/_8sdp"
+        app:angle="@dimen/_8sdp"
+        app:arrowHeight="@dimen/_10sdp"
+        app:arrowPosition="14dp"
+        app:arrowLocation="left"
+        app:arrowCenter="true"
+        app:bubbleColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

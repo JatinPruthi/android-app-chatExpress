@@ -101,6 +101,10 @@ public class ChatDialogsActivity extends AppCompatActivity  implements QBSystemM
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId())
         {
+
+            case R.id.chat_dialog_menu_chatbot:
+                openChatBot();
+                break;
             case R.id.chat_dialog_menu_user:
                 showUserProfile();
                 break;
@@ -108,6 +112,11 @@ public class ChatDialogsActivity extends AppCompatActivity  implements QBSystemM
                 break;
         }
         return true;
+    }
+
+    private void openChatBot() {
+
+       startActivity(new Intent(ChatDialogsActivity.this,ChatBot.class));
     }
 
     private void showUserProfile() {

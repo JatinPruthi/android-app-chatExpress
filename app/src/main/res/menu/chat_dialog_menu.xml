@@ -3,10 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
+
+    <item
+        android:id="@+id/chat_dialog_menu_chatbot"
+        android:icon="@drawable/ic_chatbot"
+        android:title="My ChatBot"
+        app:showAsAction="ifRoom"
+        />
+
     <item
         android:id="@+id/chat_dialog_menu_user"
         android:icon="@drawable/ic_user"
         android:title="User Profile"
         app:showAsAction="ifRoom"/>
+
 
 </menu>
