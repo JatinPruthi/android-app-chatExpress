@@ -21,6 +21,7 @@ import com.quickblox.users.QBUsers;
 import com.quickblox.users.model.QBUser;
 
 import es.dmoral.toasty.Toasty;
+import projects.jatin.chatexpress.Utils.SharedPref;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     static final String ACCOUNT_KEY="BGk1piDLVzYzfBhJMGEF";
 
     static final int REQUEST_CODE=1000;
+
+    SharedPref sharedPref;
 
     Button btnLogin,btnSignup;
     EditText edtUser,edtPassword;
@@ -81,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
 
                         Intent intent= new Intent(MainActivity.this,ChatDialogsActivity.class);
                         intent.putExtra("user",user);
+                        sharedPref.setUser(user);
+                        sharedPref.setPassword(password);
                         intent.putExtra("password",password);
                         startActivity(intent);
                         finish();

@@ -25,7 +25,8 @@
         <activity android:name=".ListUsersActivity" />
         <activity android:name=".ChatMessageActivity" />
         <activity android:name=".UserProfile" />
-        <activity android:name=".ChatBot"></activity>
+        <activity android:name=".ChatBot" />
+        <activity android:name=".Splash"></activity>
     </application>
 
 </manifest>
