@@ -287,6 +287,7 @@ public class ChatDialogsActivity extends AppCompatActivity  implements QBSystemM
                     @Override
                     public void onError(QBResponseException e) {
 
+                        mDialog.dismiss();
                         Toasty.error(ChatDialogsActivity.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });

@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        sharedPref=new SharedPref(MainActivity.this);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             requestRuntimePermissions();
@@ -84,8 +85,6 @@ public class MainActivity extends AppCompatActivity {
 
                         Intent intent= new Intent(MainActivity.this,ChatDialogsActivity.class);
                         intent.putExtra("user",user);
-                        sharedPref.setUser(user);
-                        sharedPref.setPassword(password);
                         intent.putExtra("password",password);
                         startActivity(intent);
                         finish();

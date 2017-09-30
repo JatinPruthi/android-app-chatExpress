@@ -15,7 +15,7 @@ public class SharedPref {
 
     String user,password;
 
-    public SharedPref(Context context, SharedPreferences preferences, SharedPreferences.Editor editor) {
+    public SharedPref(Context context) {
         this.context = context;
         preferences = context.getSharedPreferences(context.getPackageName(),Context.MODE_PRIVATE);
         editor = preferences.edit();
@@ -37,5 +37,12 @@ public class SharedPref {
     public void setPassword(String password) {
         editor.putString("password",password);
         editor.apply();
+    }
+
+    public void clear(){
+
+        editor.clear();
+        editor.apply();
+
     }
 }

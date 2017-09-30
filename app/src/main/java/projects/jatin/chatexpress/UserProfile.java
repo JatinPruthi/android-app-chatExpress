@@ -36,6 +36,7 @@ import java.io.InputStream;
 import es.dmoral.toasty.Toasty;
 import projects.jatin.chatexpress.Common.Common;
 import projects.jatin.chatexpress.Holder.QBUsersHolder;
+import projects.jatin.chatexpress.Utils.SharedPref;
 
 public class UserProfile extends AppCompatActivity {
 
@@ -43,11 +44,15 @@ public class UserProfile extends AppCompatActivity {
     Button btnUpdate,btnCancel;
     ProgressDialog mDialog;
 
+    SharedPref sharedPref;
+
     ImageView user_avatar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_profile);
+
+        sharedPref=new SharedPref(UserProfile.this);
 
         //Add Toolbar
         Toolbar toolbar= (Toolbar) findViewById(R.id.user_update_toolbar);
@@ -311,6 +316,7 @@ public class UserProfile extends AppCompatActivity {
 //                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //remove all previous activities
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                        sharedPref.clear();
                         startActivity(intent);
                         finish();
 
