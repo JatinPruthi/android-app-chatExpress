@@ -314,8 +314,10 @@ public class UserProfile extends AppCompatActivity {
                         Toasty.success(UserProfile.this, "Logout Successful", Toast.LENGTH_SHORT).show();
                         Intent intent= new Intent(UserProfile.this,MainActivity.class);
 //                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); //remove all previous activities
-                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         sharedPref.clear();
                         startActivity(intent);
                         finish();

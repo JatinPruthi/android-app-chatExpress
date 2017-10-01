@@ -12,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.quickblox.auth.session.QBSettings;
@@ -34,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
     SharedPref sharedPref;
 
-    Button btnLogin,btnSignup;
+    Button btnLogin;
+    TextView btnSignup;
     EditText edtUser,edtPassword;
 
     @Override
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         initializeFramework();
 
         btnLogin= (Button) findViewById(R.id.main_btnLogin);
-        btnSignup= (Button) findViewById(R.id.main_btnSignup);
+        btnSignup= (TextView) findViewById(R.id.main_btnSignup);
 
         edtUser= (EditText) findViewById(R.id.main_editLogin);
         edtPassword= (EditText) findViewById(R.id.main_editPassword);
