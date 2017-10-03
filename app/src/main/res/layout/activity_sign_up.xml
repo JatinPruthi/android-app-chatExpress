@@ -23,6 +23,7 @@
             android:textColor="@color/white"
             android:layout_height="wrap_content">
             <EditText
+                android:textSize="18sp"
                 android:textColorHint="@color/white"
                 android:textColor="@color/white"
                 android:backgroundTint="@color/white"
@@ -39,6 +40,7 @@
             android:textColor="@color/white"
             android:layout_height="wrap_content">
             <EditText
+                android:textSize="18sp"
                 android:backgroundTint="@color/white"
                 android:id="@+id/signup_editLogin"
                 android:hint="Username"
@@ -55,6 +57,7 @@
             android:textColor="@color/white"
             android:layout_height="wrap_content">
             <EditText
+                android:textSize="18sp"
                 android:backgroundTint="@color/white"
                 android:id="@+id/signup_editPassword"
                 android:hint="Password"
@@ -71,6 +74,8 @@
             android:layout_marginTop="@dimen/_30sdp"
             android:id="@+id/signup_btnSignup"
             android:text="Sign Up"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:background="@drawable/buttonshape"
             android:textColor="@color/white"
             android:layout_width="@dimen/_150sdp"
@@ -84,6 +89,8 @@
         android:layout_marginTop="@dimen/_30sdp"
         android:background="@drawable/buttonshape"
         android:text="Cancel"
+        android:textSize="20sp"
+        android:textStyle="bold"
         android:textColor="@color/white" />
 
 </LinearLayout>

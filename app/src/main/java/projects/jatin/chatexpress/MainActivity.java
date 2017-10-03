@@ -10,6 +10,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         btnSignup= (TextView) findViewById(R.id.main_btnSignup);
 
         edtUser= (EditText) findViewById(R.id.main_editLogin);
+        edtUser.setImeOptions(EditorInfo.IME_ACTION_NEXT);
         edtPassword= (EditText) findViewById(R.id.main_editPassword);
 
 

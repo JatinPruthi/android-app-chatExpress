@@ -4,14 +4,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#caf"
+    android:background="@drawable/login_background"
     android:layout_height="match_parent"
     tools:context="projects.jatin.chatexpress.Splash">
 
     <TextView
-        android:textSize="32sp"
+        android:textSize="40sp"
         android:textColor="@android:color/white"
         android:gravity="center"
+        android:textStyle="bold"
         android:text="CHAT EXPRESS!"
         android:layout_gravity="center"
         android:layout_width="match_parent"

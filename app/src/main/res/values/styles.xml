@@ -4,7 +4,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">#00BCD4</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowActionBar">false</item>
@@ -17,5 +17,14 @@
         <item name="android:windowTranslucentStatus">true</item>
         <item name="windowActionBar">false</item>
     </style>
+
+    <!--<style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+
+        <!--<item name="android:colorPrimaryDark">#00BCD4</item>-->
+        <!--<item name="actionBarTheme">@style/Theme.AppCompat.Light.NoActionBar</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="windowActionBar">false</item>-->
+    <!--</style>-->
 
 </resources>

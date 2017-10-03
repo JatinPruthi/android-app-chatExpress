@@ -530,7 +530,7 @@ public class ChatMessageActivity extends AppCompatActivity implements QBChatDial
                                                 .endConfig()
                                                 .round();
 
-                                        TextDrawable online=builder.build("", Color.RED);
+                                        TextDrawable online=builder.build("", Color.GREEN);
                                         img_online_count.setImageDrawable(online);
                                         txt_online_count.setText(String.format("%d/%d Online",onlineList.size(),qbChatDialog.getOccupants().size()));
 //                                        Toast.makeText(ChatMessageActivity.this, "list "+onlineList.size(), Toast.LENGTH_SHORT).show();

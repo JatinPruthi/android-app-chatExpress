@@ -36,7 +36,6 @@
             android:background="@android:color/transparent"
             android:layout_height="wrap_content">
             <EditText
-                android:imeOptions="actionNext"
                 android:id="@+id/main_editLogin"
                 android:hint="Username"
                 android:backgroundTint="@color/white"
